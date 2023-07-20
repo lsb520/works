@@ -1,0 +1,186 @@
+/*自定义样式*/
+input{
+    text-indent: 0.04rem;
+}
+input::placeholder{
+    font-size: .24rem;
+    color: #a0a0a0;
+}
+/*页面头*/
+.header{
+    height: 2.4rem;
+    width: auto;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 .4rem;
+}
+
+.a1,.a3{width: 3.6rem;}
+.a2{width: 6rem;font-weight: 600;text-align: center;font-size: 16px;}
+.a img{height: 1.2rem;}
+.a3{text-align: right;}
+/*标题头*/
+.title{
+    color: #fff;
+    height: 4rem;
+    background-color: #6c97b9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.t{padding: .32rem;}
+.t .t1{font-size: 16px;}
+.t .t2{font-size: .24rem;}
+/*主体*/
+.bodyer{
+    font-size: .24rem;
+    padding: 0 .64rem;
+}
+.bodyer .box{
+    display: flex;
+    flex-direction: column;
+    align-items:stretch
+}
+.bodyer .box>div{
+    /* border: 1px solid black; */
+}
+.bodyer .box .box_title{
+    padding: .64rem 0 0 0;
+}
+.bodyer .box table{
+    width: 100%;
+    margin: .32rem 0;
+}
+.bodyer .box table th,.bodyer .box table td{
+    border: 1px solid black;
+    width: 25%;
+    height: 20px;
+    line-height: 20px;
+}
+.line{
+    padding-bottom: .32rem;
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+.mark{
+    color: red;
+}
+.bodyer .box .box_title .sname{
+    font-weight: 400;
+}
+/*input样式*/
+.input{
+    padding: .32rem 0;
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+/*按钮样式*/
+.btn{
+    margin-top: .48rem;
+    padding: .32rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: .16rem;
+}
+.btn img{
+    height: .64rem;
+    margin: 0 .64rem;
+}
+/*选择器弹窗样式*/
+.selector{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    font-size: .24rem;
+}
+.selector .select{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(248, 248, 248);
+    padding: .24rem;
+}
+.selector .select>div{
+    padding: .24rem .40rem;
+    border-radius: .16rem;
+}
+.selector .select .cancel{
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+}
+.selector .select .confirm{
+    background-color: #3478f5;
+    color: #fff;
+}
+.selector .years{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(250, 250, 250);
+    padding: .32rem 0;
+    border-top: 0.02rem solid rgb(238, 238, 238);
+    border-bottom: 0.04rem solid rgb(238, 238, 238);
+    color: #88878c;
+}
+.selector .select_box{
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/*轮滑数字样式*/
+.picker{
+    width:25%;
+    height:5.5rem;
+    /* border:1px solid black; */
+    position:relative;
+    overflow: hidden;
+    touch-action: none;
+}
+.picker_column{
+    width:100%;
+    height:100%;
+}
+.picker_item{
+    height:1.1rem;
+    font-size:1rem;
+    color:rgb(194, 192, 192);
+    text-align: center;
+    user-select: none;
+}
+.picker_item[selected]{
+    color:black;
+}
+.picker_selector{
+    width:100%;
+    height:1.1rem;
+    position:absolute;
+    left:-1px;
+    top:40%;
+    border:1px solid black;
+    z-index:-1;
+}
+.submit{
+    background-color: #6c97b9;
+    color: #fff;
+    margin: 3rem 0 .4rem 0;
+    text-align: center;
+    padding: .48rem 0;
+    border-radius: .16rem;
+}
+.hide{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 100;
+}

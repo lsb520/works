@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登记表</title>
+    <style>
+        @media screen and (min-width: 320px) {
+        html {
+            font-size: 21.33333333px;
+        }
+        }
+        @media screen and (min-width: 350px) {
+        html {
+            font-size: 23.33333333px;
+        }
+        }
+        @media screen and (min-width: 375px) {
+        html {
+            font-size: 25px;
+        }
+        }
+        @media screen and (min-width: 750px) {
+        html {
+            font-size: 50px;
+        }
+        }
+    </style>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="a a1"><img src="images/cross.png" alt=""></div>
+        <div class="a a2">应聘登记表</div>
+        <div class="a a3"><img src="images/more.png" alt=""></div>
+    </div>
+    <div class="title">
+        <div class="t t1">杭州方大丝绸有限公司</div>
+        <div class="t t1">应聘登记表</div>
+    </div>
+    <div class="bodyer">
+        <div class="box post">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">应聘岗位</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box date">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">填表日期</span>
+            </div>
+            <div class="btn pdate">请选择<img src="images/arrow.png" alt=""></div>
+        </div>
+        <div class="box sname">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">姓名</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box sex">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">性别</span>
+            </div>
+            <div class="btn psex">请选择<img src="images/arrow.png" alt=""></div>
+        </div>
+        <div class="box born">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">出生日期</span>
+            </div>
+            <div class="btn pborn">请选择<img src="images/arrow.png" alt=""></div>
+        </div>
+        <div class="box nation">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">民族</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box politics">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">政治面貌</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box marry">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">婚否</span>
+            </div>
+            <div class="btn pmarry">请选择<img src="images/arrow.png" alt=""></div>
+        </div>
+        <div class="box health">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">健康状况</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box native">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">籍贯（省、市）</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box mobile">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">联系方式</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box email">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">电子邮箱</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box education">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">学历</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box residence">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">现住地</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box onjob">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">目前是否在职</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box report">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">预计到岗时间</span>
+            </div>
+            <div class="btn preport">请选择<img src="images/arrow.png" alt=""></div>
+        </div>
+        <div class="box salary">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">期望薪资</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box foreign">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">外语水平</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box computer">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">计算机水平</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box education">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">教育经历（请至少完整填写一行）</span>
+            </div>
+            <table border="1">
+                <tr>
+                    <th>时间</th>
+                    <th>毕业院校</th>
+                    <th>专业</th>
+                    <th>详细情况</th>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="line"></div>
+        </div>
+        <div class="box work">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">工作经历（请至少完整填写一行,没有则填写<aa style="color:red;">`无`</aa>）</span>
+            </div>
+            <table border="1">
+                <tr>
+                    <th>时间</th>
+                    <th>公司名称</th>
+                    <th>职务</th>
+                    <th>职责</th>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="line"></div>
+        </div>
+        <div class="box honor">
+            <div class="box_title">
+                <span class="sname">个人荣誉</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box interest">
+            <div class="box_title">
+                <span class="sname">兴趣特长</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="box evaluate">
+            <div class="box_title">
+                <span class="mark">*</span><span class="sname">自我评价</span>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入" maxlength="11"></div>
+        </div>
+        <div class="submit">提交</div>
+    </div>
+    <!-- 封装选择器 -->
+    <div class="selector">
+        <div class="select">
+            <div class="cancel">取消</div>
+            <div class="confirm">确定</div>
+        </div>
+        <div class="years">
+            <span>年</span>
+            <span>月</span>
+            <span>日</span>
+        </div>
+        <div class="select_box">
+            <div class="picker">
+                <div class="picker_column year">
+                    <div class="picker_item">2000</div>
+                    <div class="picker_item">2001</div>
+                    <div class="picker_item" selected>2002</div>
+                    <div class="picker_item">2003</div>
+                    <div class="picker_item">2004</div>
+                    <div class="picker_item">2005</div>
+                    <div class="picker_item">2006</div>
+                    <div class="picker_item">2007</div>
+                    <div class="picker_item">2008</div>
+                    <div class="picker_item">2009</div>
+                </div>
+                <div class="picker_selector"></div>
+            </div>
+            <div class="picker">
+                <div class="picker_column month">
+                    <div class="picker_item">01</div>
+                    <div class="picker_item">02</div>
+                    <div class="picker_item" selected>03</div>
+                    <div class="picker_item">04</div>
+                    <div class="picker_item">05</div>
+                    <div class="picker_item">06</div>
+                    <div class="picker_item">07</div>
+                    <div class="picker_item">08</div>
+                    <div class="picker_item">09</div>
+                    <div class="picker_item">10</div>
+                </div>
+                <div class="picker_selector"></div>
+            </div>
+            <div class="picker">
+                <div class="picker_column day">
+                    <div class="picker_item">01</div>
+                    <div class="picker_item">02</div>
+                    <div class="picker_item" selected>03</div>
+                    <div class="picker_item">04</div>
+                    <div class="picker_item">05</div>
+                    <div class="picker_item">06</div>
+                    <div class="picker_item">07</div>
+                    <div class="picker_item">08</div>
+                    <div class="picker_item">09</div>
+                    <div class="picker_item">10</div>
+                </div>
+                <div class="picker_selector"></div>
+            </div>
+        </div>
+    </div>
+    <div class="hide"></div>
+    <script src="js/picker.js"></script>
+    <script>
+        let selector = document.querySelector(".selector");
+        let cancel = document.querySelector(".cancel");
+        let confirm = document.querySelector(".confirm");
+        let pdate = document.querySelector(".pdate");
+        let hide = document.querySelector(".hide");
+        pdate.onclick = function(){
+            selector.style.display="flex"
+            hide.style.display="block"
+            document.documentElement.style.overflowY = 'hidden'
+        }
+        cancel.onclick = function(){
+            selector.style.display="none"
+            hide.style.display="none"
+            document.documentElement.style.overflowY = 'auto'
+        }
+        confirm.onclick = function(){
+            selector.style.display="none"
+            hide.style.display="none"
+            document.documentElement.style.overflowY = 'auto'
+        }
+
+        let inputs = document.querySelectorAll(".input>input").value;
+
+        let submit = document.querySelectorAll(".submit");
+        submit.onclick = function(){
+
+        }
+        
+
+    
+        
+    </script>
+</body>
+</html>
